@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "/VopgtQcqZdpwsndrflrJO68akXM/t6wLiGoZk5IdQv7VKKA9/SdXqkXjY/tHIPIDi4EY9s1Y4gdbW/pL3oBwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\beste\\source\\repos\\ElastichSearch-BlogProject\\ElastichSearch-BlogProject\\ElastichSearch-BlogProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\beste\\.nuget\\packages\\elastic.clients.elasticsearch\\8.1.1\\elastic.clients.elasticsearch.8.1.1.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\elastic.transport\\0.4.8\\elastic.transport.0.4.8.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\beste\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

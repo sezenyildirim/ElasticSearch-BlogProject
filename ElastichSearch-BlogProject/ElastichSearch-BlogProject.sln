@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElastichSearch-BlogProject", "ElastichSearch-BlogProject\ElastichSearch-BlogProject.csproj", "{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D21E63D3-0452-4071-90AC-B6ED5DDE1078}
+	EndGlobalSection
+EndGlobal

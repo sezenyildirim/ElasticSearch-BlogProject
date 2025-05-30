@@ -1,0 +1,785 @@
+/* Base styles and variables */
+:root {
+  --primary-green: #4A6741;
+  --light-green: #8BA888;
+  --lighter-green: #E8F0E6;
+  --accent-pink: #F8D7DB;
+  --cream: #FFF8EE;
+  --dark-text: #333333;
+  --light-text: #666666;
+  --white: #FFFFFF;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-text);
+  line-height: 1.6;
+  background-color: var(--cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-green);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--light-green);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  background-color: var(--white);
+  padding: 20px 0;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo h1 {
+  color: var(--primary-green);
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: var(--light-text);
+  font-style: italic;
+  font-size: 14px;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 300px;
+    margin-right: -150px;
+}
+
+.imgIcon {
+    max-width: 10%;
+    height: auto;
+    color: #4a6741
+}
+
+.search-bar {
+  display: flex;
+  /*border: 2px solid var(--light-green);*/
+  /*border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--white);
+  transition: var(--transition);*/
+}
+
+/*.search-bar:focus-within {
+  box-shadow: 0 0 0 2px rgba(139, 168, 136, 0.3);
+}*/
+
+/*.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}*/
+
+.search-bar button {
+  border: none;
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button:hover {
+  background-color: var(--light-green);
+}
+
+/* Added navigation styles */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.main-nav ul li a {
+  color: var(--dark-text);
+  font-weight: 600;
+  padding: 5px 0;
+  position: relative;
+}
+
+.main-nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-green);
+  transition: width 0.3s;
+}
+
+
+.main-nav ul li a:hover::after,
+.main-nav ul li a.active::after {
+  width: 100%;
+}
+
+.main-nav ul li a.active {
+  color: var(--primary-green);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(rgba(74, 103, 65, 0.7), rgba(74, 103, 65, 0.7)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07') no-repeat center center;
+  background-size: cover;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: 2px solid var(--primary-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-green);
+  border-color: var(--light-green);
+  color: var(--white);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+
+
+
+/* Featured Flowers section */
+.featured {
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-green);
+  font-size: 36px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--accent-pink);
+  margin: 15px auto 0;
+}
+
+.flowers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.flower-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.flower-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.flower-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.flower-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.flower-card:hover .flower-image img {
+  transform: scale(1.05);
+}
+
+.flower-info {
+  padding: 20px;
+}
+
+.flower-info h3 {
+  color: var(--primary-green);
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.flower-info p {
+  color: var(--light-text);
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.read-more {
+  display: inline-block;
+  color: var(--primary-green);
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.read-more:hover {
+  border-bottom-color: var(--primary-green);
+}
+
+/* View All Container */
+.view-all-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Page Banner */
+.page-banner {
+  background-color: var(--lighter-green);
+  text-align: center;
+  padding: 60px 0;
+  margin-bottom: 50px;
+}
+
+.page-banner h2 {
+  color: var(--primary-green);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.page-banner p {
+  color: var(--light-text);
+  font-size: 18px;
+}
+
+/* Categories Grid Styles */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.category-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-image {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.05);
+}
+
+.category-count {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: var(--primary-green);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category-info {
+  padding: 25px;
+}
+
+.category-info h3 {
+  color: var(--primary-green);
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.category-info p {
+  color: var(--light-text);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.view-category {
+  display: inline-block;
+  color: var(--primary-green);
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.view-category:hover {
+  border-bottom-color: var(--primary-green);
+}
+
+/* Gardening Tips Section */
+.gardening-tips {
+  padding: 50px 0;
+  background-color: var(--lighter-green);
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.gardening-tips-content {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.gardening-tips-content h2 {
+  color: var(--primary-green);
+  margin-bottom: 25px;
+  font-size: 30px;
+  position: relative;
+}
+
+.gardening-tips-content h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--accent-pink);
+  margin: 15px auto 0;
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tip-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tip-icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.tip-card h3 {
+  color: var(--primary-green);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tip-card p {
+  color: var(--light-text);
+  line-height: 1.5;
+}
+
+/* Newsletter section - rename to be consistent but keep the existing selectors */
+.newsletter {
+  /* Hide this section since we're replacing it with gardening tips */
+  display: none;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 65%;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent-pink);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: rgba(255, 255, 255, 0.9);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--accent-pink);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items:center;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: none;
+    order: 3;
+  }
+  
+  .main-nav {
+    order: 2;
+    width: 100%;
+  }
+  
+  .main-nav ul {
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .newsletter-content form {
+    flex-direction: column;
+  }
+  
+  .newsletter-content input,
+  .newsletter-content button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 70px 0;
+  }
+  
+  .hero-content h2 {
+    font-size: 30px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .main-nav ul {
+    gap: 15px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .tips-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tip-card {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Search Modal Styles */
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.98);
+  z-index: 9999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.search-modal-content {
+  width: 90%;
+  max-width: 700px;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 40px 30px 30px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.search-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--light-text);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.search-modal-close:hover {
+  color: var(--primary-green);
+}
+
+.search-modal-form {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#modal-search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid var(--light-green);
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+#modal-search-button {
+  padding: 12px 24px;
+  background: var(--primary-green);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#modal-search-button:hover {
+  background: var(--light-green);
+}
+
+.modal-search-results {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.modal-flower-card {
+  background: var(--lighter-green);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 18px 14px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.modal-flower-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-flower-card h3 {
+  margin: 8px 0 4px 0;
+  font-size: 1.2rem;
+  color: var(--primary-green);
+}
+
+.modal-flower-card p {
+  font-size: 0.98rem;
+  color: var(--light-text);
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .search-modal-content {
+    padding: 20px 5px 15px 5px;
+  }
+  .modal-search-results {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading Indicator */
+.loading-indicator {
+  text-align: center;
+  color: var(--light-text);
+  padding: 30px;
+  font-size: 1.2rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}

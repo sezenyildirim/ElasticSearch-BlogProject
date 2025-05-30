@@ -1,0 +1,92 @@
+﻿@{
+    Layout = null;
+}
+@model ElastichSearch_BlogProject.Models.Flowers
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.Name - Blossom Blog</title>
+    <link rel="icon" href="~/img/icon.svg" type="image/x-icon">
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/css/details.css?v3" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="~/js/script.js?v2"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="@Url.Action("Index","Blog")">
+                <div class="logo">
+                    <h1>Blossom Blog</h1>
+                    <p class="tagline">Bitkilerin Büyülü Dünyasını Keşfedin</p>
+                </div>
+            </a>
+            <div class="search-container">
+                <div class="search-bar">
+                    <button id="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="plant-card">
+        <img src="@Model.Image" alt="@Model.Name" />
+        <div class="plant-name">@Model.Name</div>
+        <div class="plant-latin">@Model.LatinName</div>
+        <div class="plant-description">
+            @Model.Details
+        </div>
+        <a href="@Url.Action("Index","Blog")">
+
+            <button class="arrow-btn">
+                Tüm İçerikler &#8594;
+            </button>
+        </a>
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Blossom Blog</h3>
+                    <p>Bitki Rehberiniz</p>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/sezenyildirim" target="_blank">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Blossom Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="search-modal" style="display:none;">
+        <div class="search-modal-content">
+            <button class="search-modal-close" id="search-modal-close">&times;</button>
+            <div class="search-modal-form">
+                <input type="text" id="modal-search-input" placeholder="Bitki ara...">
+                <button id="modal-search-button">Ara</button>
+            </div>
+            <div id="modal-search-results" class="modal-search-results"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\beste\\source\\repos\\ElastichSearch-BlogProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}|ElastichSearch-BlogProject\\ElastichSearch-BlogProject.csproj|c:\\users\\beste\\source\\repos\\elastichsearch-blogproject\\elastichsearch-blogproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}|ElastichSearch-BlogProject\\ElastichSearch-BlogProject.csproj|solutionrelative:elastichsearch-blogproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}|ElastichSearch-BlogProject\\ElastichSearch-BlogProject.csproj|c:\\users\\beste\\source\\repos\\elastichsearch-blogproject\\elastichsearch-blogproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56D77CDC-25E8-4C7A-BC3E-D104B76313F8}|ElastichSearch-BlogProject\\ElastichSearch-BlogProject.csproj|solutionrelative:elastichsearch-blogproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\beste\\source\\repos\\ElastichSearch-BlogProject\\ElastichSearch-BlogProject\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ElastichSearch-BlogProject\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\beste\\source\\repos\\ElastichSearch-BlogProject\\ElastichSearch-BlogProject\\appsettings.Development.json",
+              "RelativeToolTip": "ElastichSearch-BlogProject\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-30T10:09:15.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\beste\\source\\repos\\ElastichSearch-BlogProject\\ElastichSearch-BlogProject\\appsettings.json",
+              "RelativeDocumentMoniker": "ElastichSearch-BlogProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\beste\\source\\repos\\ElastichSearch-BlogProject\\ElastichSearch-BlogProject\\appsettings.json",
+              "RelativeToolTip": "ElastichSearch-BlogProject\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-30T10:09:12.947Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

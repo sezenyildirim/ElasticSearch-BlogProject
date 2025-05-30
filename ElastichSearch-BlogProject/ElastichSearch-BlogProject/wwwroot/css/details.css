@@ -1,0 +1,116 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.plant-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.plant-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2d3a4b;
+    margin-bottom: 0.5rem;
+}
+
+.plant-latin {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.plant-description {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.arrow-btn {
+    background-color: #4A6741;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:560px;
+}
+/*
+    .arrow-btn:focus {
+        outline: none;
+    }
+
+    .arrow-btn:hover {
+        background-color: #3e5634;
+    }
+
+    .arrow-btn span {
+        margin-left: 8px;
+    }
+*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .plant-card {
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+
+    .plant-name {
+        font-size: 1.8rem;
+    }
+
+    .plant-latin {
+        font-size: 1rem;
+    }
+
+    .plant-description {
+        font-size: 1rem;
+        padding: 0;
+    }
+}
